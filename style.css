@@ -163,7 +163,7 @@ li{
 	margin-top: 1000px;
 }
 .gal-col-2 img, .gal-col-1 img{
-width: 950px;
+width: 700px;
 padding-bottom: 200px;
 }
 
@@ -294,7 +294,7 @@ padding-bottom: 200px;
     align-items: center;
     display: flex;
     padding: 50px;
-    
+
 }
 .contactRow h1{
 	font-size: 5em;
@@ -329,9 +329,20 @@ padding-bottom: 200px;
 	}
 
 }
-@media only screen  and (max-width : 2000px) {
+@media only screen  and (max-width : 1800px) {
 	.gal-col-2 img, .gal-col-1 img {
-    width: 700px;
+    width: 500px;
    }
+   .topRight img {
+    width: 80%;
+}
+.bottomLeft img {
+    width: 45%;
+}
+.bottomLeft img {
+    width: 45%;
+}
+
+
 
 }
