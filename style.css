@@ -192,43 +192,8 @@ padding-bottom: 200px;
 	border-top:5px solid #601A1A;
 }
 
-@media only screen and (max-width:600px) {
-	.topLeft, .bottomLeft, .topRight{
-	clear:both;
-	position: relative;
-	top: auto;
-	left: auto;
-}	
-	.topRight img, .bottomLeft img, .topLeft img{
-		width: 100%;
-	}
-	.logo{
-		width: 100%;
-		position: relative;
-		top: auto%;
-		left:50%;
-		-webkit-transform: translate(-50%, -50%);
-    	-ms-transform: translate(-50%, -50%);
-    	transform: translate(-50%, -50%);
-
-	}
-	.logoContainer{
-		background-color: #EDD3C4;
-		height: 100vh;
-	}
-	.description{
-		left:auto;
-		top:auto;
-		position: relative;
-		text-align: center;
-	}
-	.overlay-layer{
-		display: none;
-	}
-
-}
 /*about page*/
-.wrapper, .col-1, .col-2{
+.aboutWrapper, .col-1, .col-2{
 	display:flex;
 }
 .col-1{
@@ -261,6 +226,7 @@ padding-bottom: 200px;
 }
 .about{
 	overflow: scroll;
+	font-size: 1.5em;
 	
 }
 
@@ -317,6 +283,79 @@ padding-bottom: 200px;
     display: flex;
     padding: 50px;
 }
+.bottomLeft{
+		visibility: visible;
+	}
+
+@media only screen and (max-width:600px) {
+
+	.topRight img, .bottomLeft img, .topLeft img{
+	width: 100%;
+	top: auto;
+	left: auto;
+	}
+	.topRight {
+		left:18%;
+		top:64%;
+	}
+	.topLeft {
+		top:10%;
+		left:27%;
+	}
+	.bottomLeft{
+		visibility: hidden;
+	}
+	.logo{
+		width: 100%;
+		position: absolute;
+		left:50%;
+		top:43%;
+		-webkit-transform: translate(-50%, -50%);
+    	-ms-transform: translate(-50%, -50%);
+    	transform: translate(-50%, -50%);
+
+	}
+	.logoContainer{
+		background-color: #EDD3C4;
+		height: 100vh;
+	}
+	.description{
+		left:15%;
+		top:50%;
+		position: absolute;
+	}
+	.galleryPreview{
+		margin-top:100px;
+		flex-direction:column;
+	}
+	.gal-col-2{
+	margin-top: 1px;
+	}
+	.flex-row{
+		flex-direction:column;
+	}
+	.aboutWrapper{
+		width: 100%;
+		display: block;
+		font-size:1.5em;
+	}
+	.col-1{
+		width: 100vw;
+		margin: 0 auto;
+		max-height:300px;
+	}
+	.aboutImg {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.col-2{
+		width: 80%;
+		padding: 20px;
+		margin: 0 auto;
+		overflow: auto;
+	}
+
+}
 @media only screen  and (min-width : 2000px) {
 	.topRight img{
 		width:125%;
@@ -342,7 +381,4 @@ padding-bottom: 200px;
 .topLeft img {
     width: 60%;
 }
-
-
-
 }
